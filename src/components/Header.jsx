@@ -7,7 +7,7 @@ function Header() {
     const { darkMode, setDarkMode } = useDarkMode();
 
     return (
-        <header className="fixed top-0 w-full h-16 z-50">
+        <header className="sticky top-0 w-full h-16 z-50">
             <div className="flex items-center px-3 md:px-8 h-full dark:border-b dark:border-gray-600 shadow-md dark:text-white">
                 <div className="w-4/5 md:w-1/4 flex items-center">
                     <i className="bx bxs-virus text-blue text-[40px] mr-2"></i>
