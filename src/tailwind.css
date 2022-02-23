@@ -5,6 +5,6 @@
 
 @layer base {
     body {
-        @apply font-poppins;
+        @apply font-poppins text-black dark:text-white;
     }
 }
