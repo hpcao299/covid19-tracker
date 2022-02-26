@@ -34,16 +34,16 @@ function VaccinationHighlights({ highlights }) {
                     </div>
                     <div className="px-3 py-3 sm:px-9">
                         <div className="mb-3">
-                            <div className="inline-block px-3 rounded-full bg-cyan-100">
-                                <span className="text-[13px] font-bold text-cyan-400">
+                            <div className="inline-block px-3 rounded-full bg-cyan-200">
+                                <span className="text-[13px] font-bold text-cyan-500 tracking-wide">
                                     % dân số đã tiêm mũi 2
                                 </span>
                             </div>
                         </div>
-                        <div className="w-full h-6 rounded-full bg-emerald-50">
+                        <div className="w-full rounded-full h-7 bg-emerald-50">
                             <div
                                 style={{ width: `${secondDoseRatio}%` }}
-                                className="bg-cyan-200 h-full rounded-full flex justify-center items-center text-[13px] font-bold text-cyan-400"
+                                className="bg-cyan-200 h-full rounded-full flex justify-center items-center text-[14px] font-bold text-cyan-500"
                             >
                                 {secondDoseRatio}%
                             </div>
