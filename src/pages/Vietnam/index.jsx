@@ -21,7 +21,7 @@ function VietnamPage() {
     if (isFetching) return <div>Loading...</div>;
 
     return (
-        <>
+        <div className="px-3 pt-8 mt-4 sm:mx-auto md:px-8">
             <div className="text-[15px] text-center">
                 <h2 className="sm:text-[30px] font-bold">Số liệu COVID-19 tại Việt Nam</h2>
                 <span>
@@ -46,7 +46,7 @@ function VietnamPage() {
                 column3="Phân bổ thực tế"
                 column4="Số liều đã tiêm"
             />
-        </>
+        </div>
     );
 }
 

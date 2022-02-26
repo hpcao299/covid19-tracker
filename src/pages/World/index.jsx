@@ -7,7 +7,7 @@ function WorldPage() {
     if (isFetching) return <div>Loading...</div>;
     console.log(data);
     return (
-        <>
+        <div className="px-3 pt-8 mt-4 sm:mx-auto md:px-8">
             <div className="text-[15px] text-center">
                 <h2 className="sm:text-[30px] font-bold">Số liệu COVID-19 Thế Giới</h2>
                 <span>(Cập nhật ngày: {new Date().toLocaleDateString('en-GB')})</span>
@@ -33,7 +33,7 @@ function WorldPage() {
                     description={data?.todayDeaths}
                 />
             </div>
-        </>
+        </div>
     );
 }
 
