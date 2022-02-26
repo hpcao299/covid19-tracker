@@ -1,4 +1,3 @@
-import moment from 'moment';
 import TableList from '../../components/TableList';
 import {
     useGetChartProvinceQuery,
@@ -19,14 +18,15 @@ function VietnamPage() {
     const provinceCases = provinceCasesData?.data?.cases || [];
     const provinceVaccination = provinceVaccinationData?.data || [];
 
-    console.log(provinceVaccination);
     if (isFetching) return <div>Loading...</div>;
 
     return (
         <>
             <div className="text-[15px] text-center">
                 <h2 className="sm:text-[30px] font-bold">Số liệu COVID-19 tại Việt Nam</h2>
-                <span>(Cập nhật ngày: {moment(lastUpdated * 1000).format('DD/MM/YYYY')})</span>
+                <span>
+                    (Cập nhật ngày: {new Date(lastUpdated * 1000).toLocaleDateString('en-GB')})
+                </span>
             </div>
             <CasesHighlights highlights={trackerData} />
             <LineChart />
