@@ -27,7 +27,7 @@ function VaccinationHighlights({ highlights }) {
                             <span className="text-[15px] md:text-[17px] font-semibold text-[#1b1053] dark:text-white">
                                 Đã tiêm tăng cường
                             </span>
-                            <div className="font-semibold text-[25px] dark:text-[#817C98]">
+                            <div className="font-semibold text-[25px] text-[#817C98]">
                                 {highlightData.totalBooster.toLocaleString('it-IT')}
                             </div>
                         </div>

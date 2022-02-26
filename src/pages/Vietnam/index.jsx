@@ -6,7 +6,7 @@ import {
     useGetVaccinationQuery,
 } from '../../services/trackerApi';
 import CasesHighlights from './components/CasesHighlights';
-import LineChart from './components/LineChart';
+import ChartList from './components/ChartList';
 import VaccinationHighlights from './components/VaccinationHighlights';
 
 function VietnamPage() {
@@ -17,6 +17,8 @@ function VietnamPage() {
     const lastUpdated = trackerData?.data?.vnSeason4CommunityDaily?.lastUpdated;
     const provinceCases = provinceCasesData?.data?.cases || [];
     const provinceVaccination = provinceVaccinationData?.data || [];
+    const casesPerDay = trackerData?.data?.vnSeason4Daily?.cases;
+    const totalCases = trackerData?.data?.vnSeason4?.cases;
 
     if (isFetching) return <div>Loading...</div>;
 
@@ -29,7 +31,7 @@ function VietnamPage() {
                 </span>
             </div>
             <CasesHighlights highlights={trackerData} />
-            <LineChart />
+            <ChartList casesPerDay={casesPerDay} totalCases={totalCases} />
             <TableList
                 title="Tình hình COVID-19 tại các tỉnh thành Việt Nam"
                 data={provinceCases}
