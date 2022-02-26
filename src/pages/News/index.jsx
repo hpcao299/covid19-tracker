@@ -8,8 +8,6 @@ function NewsPage() {
 
     if (isFetching) return <div>Loading...</div>;
 
-    console.log(postCoronaNews);
-
     return (
         <div className="flex w-full mt-8">
             <div className="px-3 pt-0 pb-5 mx-auto bg-white rounded-lg md:w-1/2 dark:bg-dark-blue">
