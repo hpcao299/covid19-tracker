@@ -20,7 +20,7 @@ function VietnamPage() {
     const casesPerDay = trackerData?.data?.vnSeason4Daily?.cases;
     const totalCases = trackerData?.data?.vnSeason4?.cases;
 
-    if (isFetching) return <div>Loading...</div>;
+    if (isFetching) return null;
 
     return (
         <div className="px-3 pt-8 mt-4 sm:mx-auto md:px-8">

@@ -6,8 +6,7 @@ function NewsPage() {
     const postCoronaNews = data?.data['1005226']?.data;
     const coronaNews = data?.data['1005227']?.data;
 
-    if (isFetching) return <div>Loading...</div>;
-
+    if (isFetching) return null;
     return (
         <div className="flex w-full mt-8">
             <div className="px-3 pt-0 pb-5 mx-auto bg-white rounded-lg md:w-1/2 dark:bg-dark-blue">

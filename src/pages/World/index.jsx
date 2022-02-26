@@ -4,8 +4,8 @@ import { useGetGlobalTrackerQuery } from '../../services/globalTrackerApi';
 function WorldPage() {
     const { data, isFetching } = useGetGlobalTrackerQuery();
 
-    if (isFetching) return <div>Loading...</div>;
-    console.log(data);
+    if (isFetching) return null;
+
     return (
         <div className="px-3 pt-8 mt-4 sm:mx-auto md:px-8">
             <div className="text-[15px] text-center">

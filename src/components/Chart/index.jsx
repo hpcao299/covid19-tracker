@@ -21,7 +21,7 @@ function Chart({ title, data, type }) {
             x: formatShortDate(child.x),
             y: child.y,
         }));
-        console.log(formattedData);
+
         setChartData(formattedData);
     }, [range]);
 
