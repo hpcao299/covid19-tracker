@@ -5,7 +5,12 @@ module.exports = {
         extend: {
             colors: {
                 dark: '#10172A',
-                blue: '#53c7f9',
+                'dark-blue': '#13273F',
+                'blue-icon': '#53c7f9',
+                green: '#1cb14b',
+                blue: '#0e9dd9',
+                red: '#F9345E',
+                orange: '#FA6400',
             },
         },
         fontFamily: {

@@ -9,7 +9,21 @@ export const trackerApi = createApi({
         getChart: builder.query({
             query: () => '/getChart',
         }),
+        getChartProvince: builder.query({
+            query: () => '/getChart?type=province',
+        }),
+        getVaccination: builder.query({
+            query: () => '/getChart?type=vaccination_v2',
+        }),
+        getVaccinationProvince: builder.query({
+            query: () => '/getChart?type=vaccination2',
+        }),
     }),
 });
 
-export const { useGetChartQuery } = trackerApi;
+export const {
+    useGetChartQuery,
+    useGetChartProvinceQuery,
+    useGetVaccinationQuery,
+    useGetVaccinationProvinceQuery,
+} = trackerApi;

@@ -16,8 +16,6 @@ function DarkModeProvider({ children }) {
         localStorage.setItem('darkMode', JSON.stringify(darkMode));
     }, [darkMode]);
 
-    console.log(darkMode);
-
     return (
         <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
             {children}
