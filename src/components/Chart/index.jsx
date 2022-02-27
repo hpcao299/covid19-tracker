@@ -23,7 +23,7 @@ function Chart({ title, data, type }) {
         }));
 
         setChartData(formattedData);
-    }, [range]);
+    }, [range, data]);
 
     return (
         <>
