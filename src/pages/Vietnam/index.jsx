@@ -23,9 +23,11 @@ function VietnamPage() {
     if (isFetching) return null;
 
     return (
-        <div className="px-3 pt-8 mt-4 sm:mx-auto md:px-8">
+        <div className="px-4 pt-8 mx-auto mt-4 md:px-8">
             <div className="text-[15px] text-center">
-                <h2 className="sm:text-[30px] font-bold">Số liệu COVID-19 tại Việt Nam</h2>
+                <h2 className="text-[22px] sm:text-[30px] font-bold">
+                    Số liệu COVID-19 tại Việt Nam
+                </h2>
                 <span>
                     (Cập nhật ngày: {new Date(lastUpdated * 1000).toLocaleDateString('en-GB')})
                 </span>

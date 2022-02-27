@@ -8,8 +8,8 @@ function NewsPage() {
 
     if (isFetching) return null;
     return (
-        <div className="flex w-full mt-8">
-            <div className="px-3 pt-0 pb-5 mx-auto bg-white rounded-lg md:w-1/2 dark:bg-dark-blue">
+        <div className="flex w-full px-3 mt-8 sm:px-0">
+            <div className="px-3 pt-0 pb-5 mx-auto bg-white rounded-lg sm:px-3 md:w-1/2 dark:bg-dark-blue">
                 {coronaNews.map(detail => (
                     <New
                         key={detail.article_id}

@@ -29,8 +29,8 @@ function TableList(props) {
             </div>
             <div className="md:p-6 sm:p-[10px]">
                 {data.length > 0 ? (
-                    <table className="w-full text-gray-600">
-                        <thead>
+                    <table className="w-full mt-4 mb-1 text-gray-600 sm:my-0">
+                        <thead className="mb-3 sm:mb-0">
                             <tr className="font-semibold">
                                 <th className="text-center sm:text-left text-[13px] sm:text-[15px]">
                                     {column1}
