@@ -10,7 +10,7 @@ function New({ imageUrl, title, lead, link, publishTime }) {
                     {title}
                 </div>
                 <span className="mb-4 font-normal dark:text-gray-200">{lead}</span>
-                <div className="flex justify-between text-[12px] text-gray-300 mt-1">
+                <div className="flex justify-between text-[12px] text-gray-800 dark:text-gray-300 mt-1">
                     <span>Theo VnExpress</span>
                     <span>
                         {moment(publishTime * 1000)
