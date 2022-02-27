@@ -7,7 +7,7 @@ function WorldPage() {
     if (isFetching) return null;
 
     return (
-        <div className="w-full px-4 pt-8 mx-auto mt-4 md:px-8">
+        <div className="w-full px-4 pt-8 mx-auto mt-4 md:px-8 sm:w-[unset]">
             <div className="text-[15px] text-center">
                 <h2 className="text-[22px] sm:text-[30px] font-bold">Số liệu COVID-19 Thế Giới</h2>
                 <span>(Cập nhật ngày: {new Date().toLocaleDateString('en-GB')})</span>
