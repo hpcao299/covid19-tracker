@@ -6,7 +6,7 @@
 
 This is a code repository of a Covid-19 Tracker. All the cases, vaccinations of Vietnam and the world are summarized in this application.
 
-Technologies used in this application: React, Recharts, Redux Toolkit, ...
+Application used: React, Recharts, Redux Toolkit,... and styling with Tailwind
 
 Data was from: Zing News, VnExpress
 
