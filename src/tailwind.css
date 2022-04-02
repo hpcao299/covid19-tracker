@@ -7,12 +7,4 @@
     body {
         @apply cursor-default;
     }
-
-    * {
-        -ms-overflow-style: none;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
 }
