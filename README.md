@@ -10,4 +10,4 @@ Application used: React, Recharts, Redux Toolkit,... and styling with Tailwind.
 
 Data was from: Zing News, VnExpress.
 
-Link: [https://covid19-tracker-jack.netlify.app/vietnam](https://covid19-tracker-jack.netlify.app/vietnam)
+Link: [https://trackrcorona.netlify.app](https://trackrcorona.netlify.app)
